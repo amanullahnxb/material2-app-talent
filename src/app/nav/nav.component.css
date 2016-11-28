@@ -1,0 +1,134 @@
+md-sidenav-layout.m2app-dark {
+    background: black;
+}
+
+md-sidenav-layout {
+    box-shadow: 2px 3px 10px grey;
+}
+
+.app-content {
+    padding: 20px;
+}
+
+.app-content md-card {
+    margin: 20px;
+}
+
+.app-sidenav {
+    padding: 10px;
+    min-width: 100px;
+}
+
+.app-content md-checkbox {
+    margin: 10px;
+}
+
+.app-toolbar-filler {
+    flex: 1 1 auto;
+}
+
+.app-toolbar-menu {
+    padding: 0 14px 0 14px;
+    color: white;
+}
+
+.app-icon-button {
+    box-shadow: none;
+    user-select: none;
+    background: rgba(34, 31, 41, 0.2);
+    border: none;
+    cursor: pointer;
+    filter: none;
+    font-weight: normal;
+    height: auto;
+    line-height: inherit;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    height: 56px;
+}
+
+.app-action {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.app-spinner {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+.app-input-icon {
+    font-size: 16px;
+}
+
+.app-list {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    width: 350px;
+    margin: 20px;
+}
+
+.app-progress {
+    margin: 20px;
+}
+
+md-sidenav {
+    margin-top: 65px;
+    width: 232px;
+    z-index: 5 !important;
+    /*background: none;*/
+    height: 88%;
+    overflow: auto;
+    position: fixed;
+}
+
+.sidenav-cover-others {
+    background: #5c6f87;
+    position: fixed;
+    height: 100%;
+    z-index: 4;
+    width: 100%;
+    opacity: 0.8;
+}
+
+md-sidenav-layout {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+h1 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-left: 48px;
+    line-height: 6px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+/*
+div.nav-item {
+    display: block;
+    padding-top: 14px;
+    height: 40px;
+    padding-left: 19px;
+    transition: 0.3s ease-in;
+}
+
+div.nav-item :hover {
+    background-color: rgba(26, 5, 107, 0.3);
+    transition: 0.3s ease-in;
+}
+
+div.nav-item span {
+    float: left;
+}
+
+.active {
+    background-color: rgba(26, 5, 107, 0.1);
+}*/

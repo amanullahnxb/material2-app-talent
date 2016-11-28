@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/*@import './material2-app-theme.scss';*/
+
+
+/*// Import theming functions*/
+
+body {
+    margin: 0;
+}
+
+.md-list-text {
+    padding-bottom: 14px !important;
+    /*transition: 0.8s ease-out;*/
+}
+
+
+/*@import "";*/
+
+.list-item-hover {
+    background: rgba(38, 41, 88, 0.1) !important;
+    /*background-color: md-color($primary, A400);*/
+    /*background-color: $primary;*/
+    transition: 0.3s ease-in-out;
+}
+
+.md-list-item {
+    height: 45px !important;
+    padding-top: 15px !important;
+    transition: 0.8s ease-out;
+    cursor: pointer !important;
+}
+
+.active {
+    background-color: rgba(38, 41, 88, 0.5) !important;
+    color: white !important;
+}
+
+.active h3 {
+    color: white !important;
+}
+
+md-list-item h3 {
+    font-size: 14px !important;
+    color: dodgerblue !important;
+}

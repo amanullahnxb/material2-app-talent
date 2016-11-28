@@ -1,0 +1,84 @@
+<md-sidenav-layout [class.m2app-dark]="isDarkTheme">
+    <md-toolbar color="primary">
+        <button md-fab class="app-icon-button" (click)="toggleSlide()">
+      <i class="material-icons app-toolbar-menu">menu</i>
+    </button>
+        <SPAN><b>TALENT</b>FORGE</SPAN>
+
+        <span class="app-toolbar-filler"></span>
+        <button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button>
+    </md-toolbar>
+</md-sidenav-layout>
+
+<md-sidenav #sidenav mode="side" class="app-sidenav">
+
+    <md-list>
+        <md-list-item [mHover]="'list-item-hover'" #dashboard (click)="selectMe($event, dashboard);">
+            <md-icon md-list-avatar>dashboard</md-icon>
+            <h3 md-line> Dashbard </h3>
+            <p md-line>
+                <span>  </span>
+                <span class="demo-2">  </span>
+            </p>
+        </md-list-item>
+    </md-list>
+
+    <md-list>
+        <md-list-item [mHover]="'list-item-hover'" #knowledgeBase (click)="selectMe($event, knowledgeBase);">
+            <md-icon md-list-avatar>school</md-icon>
+            <h3 md-line> Knowledge Base </h3>
+            <p md-line>
+                <span>  </span>
+                <span class="demo-2">  </span>
+            </p>
+        </md-list-item>
+    </md-list>
+
+    <md-list>
+        <md-list-item [mHover]="'list-item-hover'" #courses (click)="selectMe($event, courses);">
+            <md-icon md-list-avatar>library_books</md-icon>
+            <h3 md-line color="primary"> Courses </h3>
+            <p md-line>
+                <span>  </span>
+                <span class="demo-2">  </span>
+            </p>
+        </md-list-item>
+    </md-list>
+
+    <md-list>
+        <md-list-item [mHover]="'list-item-hover'" #trainings (click)="selectMe($event, trainings);">
+            <md-icon md-list-avatar>local_library</md-icon>
+            <h3 md-line> Trainings </h3>
+            <p md-line>
+                <span>  </span>
+                <span class="demo-2">  </span>
+            </p>
+        </md-list-item>
+    </md-list>
+
+    <md-list>
+        <md-list-item [mHover]="'list-item-hover'" #specialists (click)="selectMe($event, specialists);">
+            <md-icon md-list-avatar>wc</md-icon>
+            <h3 md-line> Speicalists </h3>
+            <p md-line>
+                <span>  </span>
+                <span class="demo-2">  </span>
+            </p>
+        </md-list-item>
+    </md-list>
+
+    <!--<div class="nav">
+        <div class="nav-item active">
+            <span><md-icon>menu</md-icon></span>
+            <h1>Dashboard</h1>
+        </div>
+        <div class="nav-item">
+            <span><md-icon>menu</md-icon></span>
+            <h1>Dashboard</h1>
+        </div>
+    </div>-->
+
+</md-sidenav>
+
+<!--<div *ngIf="sidenav._opened" class="sidenav-cover-others" (click)="sidenav.toggle()">
+</div>-->
